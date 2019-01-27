@@ -1,0 +1,19 @@
+{
+  "name": "icard-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/debadipti/icard-generator.git"
+  },
+  "author": "Debadipti Patra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/debadipti/icard-generator/issues"
+  },
+  "homepage": "https://github.com/debadipti/icard-generator#readme"
+}
