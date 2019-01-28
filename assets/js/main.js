@@ -49,9 +49,9 @@ function createNewCard(e) {
     ul.className = "icard";
 
     // for in loop
-    for (prop in newCard) {
+    for (item in newCard) {
       const li = document.createElement("li");
-      li.innerHTML = newCard[prop];
+      li.innerHTML = newCard[item];
       ul.appendChild(li);
     }
 
@@ -64,6 +64,6 @@ function createNewCard(e) {
     gender.value = "null";
     bloodGroup.value = "null";
   } else {
-    alert("Complete the Form First!");
+    alert("Please complete the form!");
   }
 }
