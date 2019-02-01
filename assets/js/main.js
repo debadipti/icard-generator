@@ -30,10 +30,10 @@ function createNewCard(e) {
 
   // value of the input fields
   let nameValue = name.value;
-  let ageValue = age.value;
+  let ageValue = age.value + " years";
   let genderValue = gender.value;
-  let dobValue = dob.value;
-  let bgValue = bloodGroup.value;
+  let dobValue = "Birthday: " + dob.value;
+  let bgValue = "Blood Group: " + bloodGroup.value;
 
   // check the values are not blank
   if (
@@ -46,8 +46,8 @@ function createNewCard(e) {
     // create a new object from the Icard class
     const newCard = new Icard(
       nameValue,
-      ageValue,
       genderValue,
+      ageValue,
       dobValue,
       bgValue
     );
@@ -89,8 +89,8 @@ function createNewCard(e) {
 
     // make the input fields blank
     name.value = "";
-    age.value = "";
     gender.value = "null";
+    age.value = "";
     dob.value = "";
     bloodGroup.value = "null";
   } else {

@@ -5,46 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>I-CARD GENERATOR</title>
+    <link rel="stylesheet" href="assets/scss/style.css" />
     <script src="assets/js/main.js" async></script>
   </head>
   <body>
-    <h1>Create Identity Card</h1>
-
-    <!-- Icard Form -->
-    <form id="form">
-      <label for="name">Name <input type="text" id="name"/></label> <br />
-      <label for="age">Age <input type="text" id="age" maxlength="2"/></label>
-      <br />
-      <label for="gender"
-        >Gender
-        <select id="gender">
-          <option value="null">--please select--</option>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-        </select>
-      </label>
-      <br />
-      <label for="dob">Date of Birth <input type="date" id="dob" /> </label
-      ><br />
-      <label for="blood_group"
-        >Blood Group
-        <select id="blood_group">
-          <option value="null">--please select--</option>
-          <option value="A+">A+</option>
-          <option value="A-">A-</option>
-          <option value="B+">B+</option>
-          <option value="B-">B-</option>
-          <option value="AB+">AB+</option>
-          <option value="AB-">AB-</option>
-          <option value="O+">O+</option>
-          <option value="O-">O-</option>
-        </select>
-      </label>
-      <br />
-      <button type="submit">Add Card</button>
-    </form>
-
-    <!-- Icard List -->
-    <div class="icard-list"></div>
+    <header>
+      <div class="wrapper">
+        <div class="title">
+          <h1><a href="#">I-Card Generator</a></h1>
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li><a href="#">Select Theme</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper">
+        <!-- Icard List -->
+        <div class="icard-list">
+          <div id="card">
+            <ul class="icard">
+              <li>John Doe</li>
+              <li>23</li>
+              <li>Male</li>
+              <li>11/06/1995</li>
+              <li>AB+</li>
+            </ul>
+            <button id="delete_card">Delete</button>
+          </div>
+          <div id="card">
+            <ul class="icard">
+              <li>Jacob Williams</li>
+              <li>23</li>
+              <li>Male</li>
+              <li>11/06/1995</li>
+              <li>AB+</li>
+            </ul>
+            <button id="delete_card">Delete</button>
+          </div>
+        </div>
+        <div id="add-button">
+          <div class="icon">+</div>
+        </div>
+      </div>
+    </main>
+    <div id="form-popup">
+      <!-- Icard Form -->
+      <form id="form">
+        <div class="name-field">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="full name" />
+        </div>
+        <div class="gender-field">
+          <label for="gender">Gender</label>
+          <select id="gender">
+            <option value="null">--please select--</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+        <div class="age-field">
+          <label for="age">Age</label>
+          <input type="text" id="age" maxlength="2" />
+        </div>
+        <div class="dob-field">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" />
+        </div>
+        <div class="blood-field">
+          <label for="blood_group">Blood Group</label>
+          <select id="blood_group">
+            <option value="null">--please select--</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+          </select>
+        </div>
+        <button type="submit">Add Card</button>
+      </form>
+      <span id="hide-form">X</span>
+    </div>
   </body>
 </html>
