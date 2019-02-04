@@ -93,6 +93,9 @@ function createNewCard(e) {
     age.value = "";
     dob.value = "";
     bloodGroup.value = "null";
+
+    // hide the form
+    hideForm();
   } else {
     alert("Please complete the form!");
   }
@@ -103,4 +106,22 @@ function deleteCard() {
   if (confirm("Are you want to delete?")) {
     this.parentElement.remove();
   }
+}
+
+// show/hde the form
+const showBtn = document.querySelector("#add-button");
+const hideBtn = document.querySelector("#hide-form");
+const formPopup = document.querySelector("#form-popup");
+
+showBtn.addEventListener("click", showForm);
+hideBtn.addEventListener("click", hideForm);
+
+// show form function
+function showForm() {
+  formPopup.style.display = "block";
+}
+
+// hide form function
+function hideForm() {
+  formPopup.style.display = "none";
 }

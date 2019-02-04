@@ -126,6 +126,7 @@ main #add-button {
   border-radius: 5px;
   width: 20rem;
   height: 12rem;
+  cursor: pointer;
 }
 
 main #add-button .icon {
@@ -153,6 +154,7 @@ main #add-button .icon {
   margin: 3rem auto 0;
   padding: 1.4rem;
   background-color: #c0c0c0;
+  position: relative;
 }
 
 #form-popup #form div {
@@ -201,5 +203,16 @@ main #add-button .icon {
 
 #form-popup #form div select {
   padding: 0.4rem;
+}
+
+#form-popup #hide-form {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 0px 6px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
