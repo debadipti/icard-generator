@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "node-sass": "node-sass -w assets/scss/ -o assets/css/"
   },
   "repository": {
     "type": "git",
