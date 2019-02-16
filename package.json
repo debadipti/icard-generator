@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "node-sass": "node-sass -w assets/scss/ -o assets/css/"
+    "node-sass": "node-sass -w assets/scss/ -o assets/css/ --recursive"
   },
   "repository": {
     "type": "git",
