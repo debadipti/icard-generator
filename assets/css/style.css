@@ -17,7 +17,8 @@ body {
 input,
 select,
 option {
-  font-family: inherit; }
+  font-family: inherit;
+  height: auto; }
 
 .wrapper {
   position: relative;
